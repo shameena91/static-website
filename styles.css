@@ -1,0 +1,1290 @@
+
+
+
+
+
+
+*{
+    padding:0;
+    margin:0;
+    
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+    font-family: "Montserrat", serif;
+    list-style: none;
+
+   
+
+
+
+}
+body{
+    background-color: rgb(252, 250, 250);
+}
+
+header{
+    width:100%;
+    /* height:100px; */
+    background: hwb(0 100% 0%);
+    height:100px;
+    align-content: center;
+    position: fixed;
+  
+    /* position: relative; */
+    z-index: 1000;
+    
+  
+  
+    
+   
+  
+    
+}
+nav{
+  
+    display: flex;
+    justify-content: space-evenly;
+   
+    /* margin-left: auto; */
+    margin-right: auto;
+   padding-top:10px;
+   padding-bottom: 10px;
+   /* background: yellow; */
+  
+    
+   /* justify-content: center; */
+  
+
+}
+nav .leftnav{
+    display: flex;
+    align-items: center;
+    margin-right: 270px;  
+}
+nav .rightnav{
+    
+  
+    align-content: center;
+    /* background: #60b681; */
+   
+    
+    
+    
+}
+
+
+nav .leftnav .logo2{
+    height:70px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:112px;
+    color:white;
+    border-radius: 7px;
+    
+    
+    background-color: #D84E55 !important;
+    /* background-color: rgb(214, 214, 235); */
+    padding: 0;
+    justify-content: center;
+    cursor: pointer;
+}
+nav .leftnav .logo2 img{
+    margin-bottom: 0;
+    width: 40px;
+    height: 25px;
+    line-height: 0;
+
+   
+}
+.redbus_logo img{
+    height: 50px;
+    margin-right: 70px;
+}
+.leftnav .vertical-seperator{
+    height:20px;   /* Adjust based on desired height */
+    width: 1px;     /* Thin vertical line */
+    background-color:grey;
+    margin-right: 30px;
+     /* Small rounded corners */
+    /* Optional, since you're using background-color */
+  }
+  .leftnav .redrail{
+    height:70px;
+    width:112px;
+    /* background-color: yellow; */
+    border-radius: 7px;
+    margin-left: 10px;;
+    cursor: pointer;
+  }
+  .leftnav .redrail .grey:hover{
+    filter: grayscale(0);
+  }
+  .leftnav .redrail-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .leftnav .redrail img{
+    width:40px;
+    ;
+  }
+  .leftnav .redrail .upper-text{
+    
+    width:70px;
+    padding-right: 0;
+    height: 15px;
+    background-color: #60b681;
+    padding:2px 2px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    font-size: 12px;
+    color:white;
+    margin-left: 65px;
+   position:relative;
+    top:7px;
+   
+
+  }
+.grey{
+    
+    
+    filter: brightness(.5) saturate(0%);
+    /* filter: brightness(1); */
+    
+}
+nav .rightnav ul{
+   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    gap:25px;
+    flex-wrap: nowrap;
+    justify-content: center;
+   
+ 
+ 
+   
+}
+nav .rightnav li{
+    /* background-color: aqua; */
+    min-width:fit-content;
+    border-radius: 7px;;
+    padding:5px;
+}
+nav .rightnav li:hover{
+    background-color: rgb(238, 236, 236);
+    
+}
+nav .rightnav ul a{
+    text-decoration: none;
+    color:rgb(71, 66, 66);
+    /* margin-left: 10px; */
+}
+nav .rightnav .icon{
+
+margin-right: 10px;
+}
+
+
+
+
+/* main section starts here */
+
+.banner{
+    width:100%;
+    height:525px;
+    position: relative;
+   align-items: center;
+   /* margin-top: 150px; */
+   top:100px;
+   
+}
+.banner .image{
+    width:100%;
+    height:100%; 
+    z-index: -1;
+    position: absolute;
+}
+.banner .content{
+    position: absolute;
+    top:50px;
+    left:15%;
+    right:15%;
+ 
+    display: flex;
+   justify-content: center;
+   text-align: center;
+
+    
+    
+  
+    
+}
+.banner .content h1{
+    color: white;
+    font-size: 32px;
+    
+    font-weight: 700;
+    width: 100%;
+}
+
+.banner .search-container
+{
+    width:100%;
+    height: 100px;
+    /* background-color: yellow; */
+    position: absolute;
+    top:190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.banner .sub-searchcontainer{
+    height: 100px;
+  
+   background-color: white;
+   display: flex;
+   border-radius: 30px;
+   
+   
+ 
+   
+
+
+}
+
+.sub-searchcontainer .from{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-left: 20px;
+    border-right: 1px solid rgb(226, 225, 225);
+    position: relative;
+
+}
+.sub-searchcontainer .from .swap-arrow i{
+    
+    background-color:white;
+    border-radius: 50%;
+    padding: 7px;
+    border:1px solid rgb(206, 204, 204);
+    position: absolute;top:38px;right:-15px;
+    color:grey;
+    cursor: pointer;
+}
+.sub-searchcontainer .to{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-left: 20px;
+    border-right: 1px solid rgb(226, 225, 225);
+   
+}
+
+.sub-searchcontainer .date{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-left: 20px;
+    border-right: 1px solid rgb(226, 225, 225);
+}
+input[type=text]{
+    /* background-color: red; */
+    margin-top: 3px;
+    border: none;
+    
+    
+}
+label{
+
+    font-size: 14px;
+    color:rgb(102, 101, 101)
+}
+input[type=text]:focus {
+    border:none;
+    outline: none;
+
+  }
+.sub-searchcontainer .search-bus{
+    width:200px;
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+    background-color: #D84E55 !important;
+    border-radius: 0 30px 30px 0;
+    /* color:white; */
+    cursor: pointer;
+}
+.sub-searchcontainer .search-bus h1{
+    font-size: 20px;
+    text-transform: uppercase;
+    color:white;
+    
+}
+
+.card-container
+{
+    width:1200px;
+    height:310px;
+    background-color: white;
+    margin-left:auto;
+    margin-right:auto; 
+    border-radius: 30px;
+    margin-top: 40px;
+    box-shadow: 0 10px 10px rgb(247, 245, 245);  
+    
+}
+
+.card-list .card{
+    width:300px;
+    height:170px;
+    margin-left: 30px;
+   
+    /* background-image:linear-gradient(to right, blue,rgb(0, 204, 255)); */
+    border-radius: 10px;;
+    cursor: pointer;
+}
+.card-container-content h1
+{
+    padding-left: 30px;
+  padding-top: 40px;
+  padding-bottom:40px;
+  font-size: 30px;
+  color:rgb(65, 64, 64);
+  font-weight: 600;
+  
+  
+}
+
+
+table{
+    width: 100%;
+   
+    /*this is the size of the small text's baseline over part  (≈25px*3/4)*/
+    line-height: 19.5px; 
+}
+
+.left{
+   
+    font-size: 40px;
+    text-align: left;
+
+}
+.right{
+    font-size: 25px;
+    text-align: right;
+    /* background-color: red; */
+    padding-right: 20px;
+  
+
+   
+
+}
+.right p{
+    /* background-color: orange; */
+  display: inline;
+  border-radius: 25px;
+  padding:10px 20px 10px 20px;
+  font-size: 20px;
+  color:blue;
+  border: 1px solid black;
+  cursor: pointer;
+ 
+}
+
+.card-list .card1{
+    float:left;
+   
+    background-image: linear-gradient(to right, rgb(12, 57, 139) , rgb(62, 118, 216) );
+}
+.card-list .card2{
+    float:left;
+    background-image: linear-gradient(to right, rgb(39, 57, 101), rgb(80, 210, 149)  );
+}
+.card-list .card3{
+    float:left;
+    background-image: linear-gradient(to right, rgb(72, 0, 4), rgb(216, 78, 85) );
+}
+.card-list .card4{
+    float:left;
+    /* overflow: hidden; */
+    border-top-right-radius: 0;
+   border-bottom-right-radius: 0;
+   /* overflow: hidden; */
+   width:165px;
+    
+    background-image: linear-gradient(to right,rgb(14, 113, 67) ,rgb(115, 236, 179)  );
+}
+.card-list .card4 .card-content{
+    /* background-color: red; */
+    width:65px;
+    overflow: hidden;
+   white-space: nowrap;
+    
+
+}
+.card .card-image{
+    
+  
+    padding-top: 50px;
+    padding-left: 15px;
+    width:100px;
+    height:170px;
+    /* background-color: red; */
+    float:left
+    
+   
+   
+}
+.card .card-image img{
+   border-radius: 50%;
+   width:70px;
+  
+  
+}
+.card .card-content{
+    float:left;
+    width:170px;
+    height: 200px;
+    /* background-color: orange; */
+}
+
+.card .card-content li{
+    list-style: none;
+}
+.card .card-content .bus {
+    width:45px;
+    /* background-color:rgb(96, 124, 177) ; */
+    background-color: rgba(255, 255, 255, 0.2);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 13px;
+    padding:5px 0px 5px 0px;
+    margin: 15px 0px 7px 0px;
+    border-radius: 20px;
+    color:white;
+    
+}
+.card .card-content h3{
+    color:white;
+    line-height: 25px;
+    font-size: 16px;
+}
+.card .card-content p{
+    color:white;
+    margin-top: 6px;
+    font-size: 12px;
+}
+.card .card-content h4{
+    background-color: rgba(255, 255, 255, 0.2);
+    /* width:50px; */
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    font-weight: 400;
+    font-size: 12px;
+    padding:5px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border:1px dashed ;
+    float: left;
+ 
+}
+.card .card-content .icopy{
+    
+ height: 50px;
+ padding-top: 10px;
+ 
+  /* background-color: red; */
+}
+.card .card-content .icopy i{
+    margin-left: 10px;
+    font-size: 25px;
+    color:rgb(236, 232, 232);
+}
+
+.buscard-container
+{
+    width:1200px;
+    height:310px;
+    /* background-color: rgb(200, 233, 17); */
+    margin-left:auto;
+    margin-right:auto; 
+
+    margin-top: 70px;
+   
+   
+}
+.buscard-container-content h1{
+   
+   
+    padding-bottom:40px;
+    font-size: 40px;
+    color:rgb(44, 44, 44);
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 25px;;
+
+
+}
+.buscard{
+
+    width:480px;
+    height:225px;
+    background-color: rgb(248, 230, 233);
+    border-radius: 20px;
+    box-shadow:3px 3px 10px 3px hsl(0, 3%, 88%);
+    float: left;  
+    margin-right: 20px;
+    cursor:pointer;
+
+}
+.buscard .header{
+    background-color: white;
+    border-radius: 20px 20px 0px 0px;
+    border-bottom: 1px solid rgb(226, 226, 226);
+    display: flex;
+    padding: 10px 15px 15px 15px;
+    /* margin-bottom: 10px; */
+
+}
+.buscard .header .card-right{
+    padding-left: 10px;
+}
+.buscard .header .card-right .title-name{
+ 
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase; 
+    margin-right: 10px;
+      
+}
+.buscard .header .card-right .rating{
+    background-color: green;
+    border-radius: 7px;
+    padding: 3px 5px 3px 3px;
+    font-size: 14px;
+    color: white;
+}
+.buscard .header .card-right .rating i{
+    color: white;
+    padding-right: 5px;
+
+}
+.buscard .header .card-right .subtitle{
+    margin-top: 5px;
+    font-size: 18px;
+    color: rgb(121, 120, 120);
+}
+.buscard .buscard-content{
+    text-align: center;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+
+ 
+   
+
+    padding:10px 0px 10px 0px;
+
+}
+.buscard .buscard-content p{
+    width:300px;
+    
+    /* background-color: rgb(238, 28, 28); */
+    margin-left:auto;
+    margin-right:auto; 
+    font-size: 16px;
+    line-height: 1.5rem;
+    color:rgb(61, 61, 61)
+}
+.buscard .buscard-content-footer{
+    height: 22px;
+    /* width:500px; */
+    background-color: #f3f2f2;
+    text-align: center;
+    align-items: center;
+    font-size: 14px;;
+    margin-top: 15px;
+}
+.buscard .buscard-content-footer img{
+    margin-top:2px;;
+    height: 15px;
+    width:25px;
+    margin-right: 5px;
+    /* background-color: red; */
+}
+.buscard .buscard-footer{
+    text-align: center;
+    padding-top: 7px;;
+    font-size: 13px;
+    font-weight: 700;
+
+
+}
+.buscard-list .card3{
+   width:180px;
+   white-space: nowrap;
+   overflow: hidden;
+   position:relative;
+   /* z-index: -1; */
+   border-bottom-right-radius: 0;
+   border-top-right-radius: 0;
+}
+.buscard-list .card3 .buscard-content{
+    padding-left: 80px; 
+}
+
+.buscard-list .card3 .buscard-footer{
+    padding-left: 40px;
+}
+.buscard-list .card3 .buscard-content-footer{
+    padding-left: 90px;;
+}
+
+.buscard-list .card3 .right-arow i{
+    
+    text-align: center;
+    font-size: 30px;
+    padding: 8px;
+    border-radius: 50%;
+    box-shadow: 3px 4px 7px 2px rgb(223, 223, 223);
+   
+   
+   
+    /* padding-top: 15px; */
+    color: rgb(99, 98, 98);
+    position:absolute;
+    top:92px;right:20px;
+    background-color: white;
+    border:1px solid rgb(240, 239, 239);
+    cursor: pointer;
+    
+  
+    
+}
+.buscard-list .card3 .blur{
+    width:45px;
+    min-height: 225px;
+    text-align: center;
+
+    position:absolute;
+    right:0px;
+    /* mask-image: linear-gradient(black, transparent); */
+    background-image: linear-gradient(to right,
+            rgba(255, 255, 255, 0.397),
+            rgb(236, 235, 235)); 
+    /* background-image:linear-gradient(to right,rgb(245, 229, 229),white) */
+    /* border:1px solid rgb(240, 239, 239); */
+}
+
+
+/* section start */
+.book-train{
+    /* padding: 25px; */
+    width:1200px;
+    height: 600px;
+    /* background-color: red; */
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 86px
+}
+.book-train .left{
+    float:left;
+    width:50%;
+    /* background-color: green; */
+}
+.book-train .left .heading h3{
+    font-weight: 400;
+    font-size: 41px;
+
+}
+.book-train .left .link{
+    margin-top: 40px;
+    padding-left: 10px;;
+    display: flex;
+    align-items: center;
+    /* background-color: yellow; */
+    border-bottom:3px solid rgb(223, 64, 64) ;
+    width:240px;
+    cursor: pointer;
+   
+}
+
+.book-train .left .link .link-content{
+    font-size: 16px;
+    padding-left: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color:rgb(223, 64, 64);
+}
+
+.book-train .left .heading strong{
+    font-weight: 600;
+}
+.book-train .left p{
+    margin: 40px 0px;
+    font-size: 18px;
+    line-height: 2rem;
+}
+.book-train .left ul{
+    list-style: none;
+    font-size:17px ;
+    line-height: 50px;
+    font-weight: 700;
+    color:rgb(59, 59, 59);
+    
+
+}
+.book-train .left ul .image img{
+margin-right: 20px;
+width:30px;
+}
+.book-train .left .button{
+    font-size :17px;
+    font-weight: 700; 
+    text-transform: capitalize ;
+    color: white;
+    background-color: rgb(223, 64, 64);
+   width: fit-content;
+   padding: 20px;
+   border-radius: 15px;;
+   margin-top: 40px;
+   
+}
+.book-train .left .button i{
+    margin-left: 3px;;
+}
+
+.book-train .right{
+    float:right;
+    width:50%;
+    position: relative;
+    /* background-color: pink; */
+}
+.book-train .right .image-background{
+    position:relative;
+   
+
+}
+.book-train .right .image{
+    position:absolute;
+    top:0px;
+    padding-left: 25px;
+  
+}
+.app-section{
+
+    margin-top: 150px;
+    /* background-color: yellow; */
+
+    
+}
+.app-section .container{
+    
+    width:1200px;
+    height: 450px;
+    /* background-color: red; */
+    margin-left:auto;
+    margin-right:auto;
+    /* background-color: red; */
+    background-image:url("images/appInstallbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:40px;
+    border-radius: 50px;
+}
+.app-section .heading h2{
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+
+}
+.app-section .content{
+    margin-top: 40px;
+    display: flex;
+}
+.app-section .content .left{
+    background-color:white;
+    width:35%;
+    padding: 40px;
+    border-radius: 20px;;
+}
+.app-section .content .left .left-content ul{
+    font-size: 19px;
+    line-height: 40px;;
+    font-weight: 600;
+    color:rgb(83, 77, 77);
+    margin-bottom: 40px;;
+
+}
+.app-section .content .left .left-content .tick{
+    color:green;
+    font-size: 23px;;
+    padding-right: 30px;
+}
+.app-section .content .right-content{
+    /* background-color: aqua; */
+    width:65%;
+    padding: 30px;;
+   
+}
+.app-section .content .left-footer{
+    display: flex;
+    
+}
+.app-section .content .left-footer h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.app-section .content .left-footer p{
+    font-size: 14px;;
+    line-height: 25px;
+}
+.app-section .content .left-footer strong{
+    font-weight: 600;
+    text-transform: capitalize;
+
+}
+.app-section .content .left-footer .first{
+    border-right: 2px solid rgb(224, 220, 220);
+    padding-right:35px;
+}
+.app-section .content .left-footer .second{
+    padding-left:35px;
+}
+.app-section .content .left-footer .star{
+    color: black;
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+.app-section .content .right-content{
+    display: flex;
+}
+.app-section .content .right-content .qrcode{
+    padding-right: 50px;
+    padding-left: 40px;
+    color:white;
+    font-weight: 700;
+    /* border-right: 1px solid black; */
+  
+}
+.app-section .content .right-content .qrcode img{
+    height: 100px;;
+    width:100px;
+    margin-top:10px;
+   
+}
+.app-section .content .right-content .download-app{
+    padding-left: 20px;
+    color:white;
+    font-weight: 700;
+}
+.app-section .content .right-content .download-app img{
+    height:40px;
+    width:165px;
+    margin-top: 15px;;
+    padding-left: 20px;;
+    cursor: pointer;
+}
+.primo{
+    margin-top: 120px;
+}
+.primo .container{
+
+    width:1200px;
+    /* height: 450px; */
+    /* background-color: red; */
+    margin-left:auto;
+    margin-right:auto;
+    /* background-color: red; */
+    display: flex;
+    
+}
+.primo .container img{
+    border-radius: 40px;;
+    width:870px;
+    height: 525px;
+}
+
+.primo .right-content{
+    background: rgb(35, 48, 88);
+    border-radius:40px;
+    margin-left:-70px;
+    padding: 100px 40px 0px 40px;
+    color: white;
+}
+.primo .right-content .list{
+    display:flex;
+    gap:30px;
+    justify-content: left;
+    padding-bottom: 60px;;
+}
+
+.primo .right-content .list h2{
+    font-size: 28px;;
+}
+.primo .right-content .list p{
+    font-size: 20px;;
+}
+
+
+
+.global-section{
+
+    margin-top: 250px;
+    /* background-color: yellow; */
+
+    
+}
+.global-section .container{
+    
+    width:1200px;
+    height: 300px;
+
+    margin-left:auto;
+    margin-right:auto;
+    /* background-color: red; */
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+ 
+
+}
+.global-section .container .heading h2{
+    font-size: 30px;
+   
+    font-weight: 600;
+}
+.global-section .container .flag-list{
+    margin-top: 45px;
+    display: flex;
+ 
+}
+.global-section .container .flag-list .flag{
+   
+  
+    display: flex;
+    flex-direction: column;
+    overflow-wrap: break-word;
+    align-items: center;
+    margin-right: 90px;
+    width:100px;
+    cursor: pointer;
+    
+}
+.global-section .container .flag-list .flag .name{
+  
+    font-size: 17px;
+    font-weight: 600;
+    /* padding-right:px; */
+    color:rgb(65, 62, 62);  
+    text-transform: capitalize;
+    margin-top: 20px;
+    /* background-color: green; */
+    border-radius: 20px;
+    padding: 10px 15px ;
+  
+
+}
+.global-section .container .flag-list .flag .name:hover{
+    cursor: pointer;
+    background-color:rgb(243, 240, 240)
+ 
+   /* text-align: center; */
+  
+}
+.global-section .container .flag-list .flag img{
+    width: 85px;
+    height:85px;
+  border-radius: 50%;
+  box-shadow: 3px 4px 7px 2px rgb(223, 223, 223);
+
+}
+
+.busticket-online .container{
+    
+    width:1200px;
+    height: 300px;
+
+    margin-left:auto;
+    margin-right:auto;
+    /* background-color: red; */
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20px;;
+   
+ 
+
+}
+.busticket-online .container .heading,.faqs .container .heading{
+    padding:40px 0px 40px 0px;
+}
+.busticket-online .container h1,
+.red-deals .container h1,.faqs .container h1{
+    font-weight: 400;
+    font-size: 40px;
+    color:rgb(49, 48, 48);
+    
+
+}
+.busticket-online .container .description p,
+.red-deals .container .description p{
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+.busticket-online .container .description strong{
+    font-weight: 500;
+}
+
+.red-deals{
+
+    margin-top: 200px;
+    /* background-color: yellow; */
+
+    
+}
+.red-deals .container{
+    
+    width:1200px;
+    height: 300px;
+
+    margin-left:auto;
+    margin-right:auto;
+   
+ 
+    cursor: pointer;
+
+
+}
+.red-deals .container .heading
+{
+    padding:22px 0px 18px 0px;
+}
+.red-deals .container .offer-container{
+    height: 165px;
+    background-color: white;
+    border-radius: 15px;
+    border:1px solid rgb(228, 223, 223);
+    margin-top: 20px;
+     
+   
+  
+}
+.red-deals .container .offer-container .offer{
+    display:flex;
+    padding:50px;
+    justify-content: space-between;
+   
+    /* height: 160px; */
+    
+   
+    /* background-color: aqua; */
+    
+}
+ .offer .content img{
+    width: 55px;
+    height: 35px;
+    margin-right:30px;
+   
+    
+    
+ }
+ .offer-container .offer .content h3{
+    font-size: 25px;
+    font-weight: 600;
+    color:rgb(61, 60, 60);
+    padding-bottom: 15px;;
+    
+ }
+ .offer-container .offer .content{
+    /* margin-right:250px; */
+    display: flex;
+ }
+ .offer-container .offer .content ul{
+    display: flex;
+   
+    /* gap:20px; */
+ }
+ .offer-container .offer .content ul li{
+    border-right:1px solid black ;
+    margin-right: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(71, 69, 69);
+ }
+ .offer-container .offer .content li:nth-child(3){
+   
+    border: none;
+ }
+
+
+ .offer-container .offer .content span{
+    color:rgb(223, 64, 64);
+    margin-right:5px;
+ }
+ Button{
+    background-color: rgb(223, 64, 64);
+    border: none;
+    font-weight: 600;
+    padding: 15px 30px;;
+    font-size: 15px;
+    border-radius: 10px;
+    color:white;
+
+ }
+
+ .faqs{
+
+margin-top: 100px;
+    /* background-color: yellow; */
+
+    
+}
+.faqs .container{
+    
+    width:1200px;
+    /* height: 300px; */
+
+    margin-left:auto;
+    margin-right:auto;
+    /* background-color:pink; */
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+
+}
+.faqs .container .tabs ul{
+    display:flex;
+    gap:50px
+}
+.faqs .container .tabs ul li{
+   padding: 0px 10px 15px;;
+   cursor: pointer;
+}
+.faqcard-list .card{
+    /* background-color: aquamarine; */
+    border: 1px solid rgb(250, 245, 245);
+    margin-top: 25px;
+    padding:30px;
+    border-radius: 15px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+.faqcard-list .card i{
+    font-size: 30px;
+    font-weight: 400;
+}
+footer{
+    /* background-color: rgb(11, 122, 219); */
+    margin-top: 200px;;
+    color: rgb(68, 66, 66);
+    background-color:rgb(245, 243, 243);
+}
+footer .container{
+    width:1200px;
+    /* height: 300px; */
+
+    margin-left:auto;
+    margin-right:auto;
+   
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer .container .list{
+    display: flex;
+    flex-direction: column;
+
+}
+footer .container .list li{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+footer .container .list li i{
+    font-size: 35px;
+    font-weight: 100;
+
+   
+}
+footer .container .list li{
+    padding:30px 0px;
+    border-bottom: 1px solid rgb(197, 195, 195);
+    font-weight: 700;
+    color:rgb(66, 65, 65);
+    font-size: 17px;
+
+}
+footer .container .footer-content{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 100px;
+    border-bottom: 1px solid rgb(216, 213, 213);
+   
+}
+.redbus-detail img{
+    width: 100px;
+    cursor: pointer;
+}
+.redbus-detail .description{
+    width:300px;
+    line-height: 20px;;
+    
+  
+}
+.footer-content .links ul{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+   
+
+}
+.footer-content .links ul li{
+    cursor: pointer;
+}
+
+.footer-content .links ul .title{
+    font-weight: 700;
+    font-size: 17px;
+    cursor: none;
+}
+footer .small-footer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+
+}
+footer .small-footer .copy-right{
+    font-size: 14px;
+    color: rgb(68, 66, 66);
+}
+footer .small-footer  i{
+    font-size: 22px;
+    font-weight: 800;
+    color:black;
+    padding-left: 20px;;
+    cursor: pointer;
+}
